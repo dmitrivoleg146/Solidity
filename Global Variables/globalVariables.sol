@@ -26,7 +26,7 @@ contract GlobalVariables{
         origin = tx.origin;
         callData = msg.data;
         Firstfour = msg.sig;
-        value = msg.value;
-        nowOn = now;
+        //value = msg.value;
+        
     }
 }
