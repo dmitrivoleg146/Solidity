@@ -2,13 +2,13 @@
 pragma solidity ^0.8.17;
 
 contract EventTicket{
-    uint256 public numberOfTicket;
-    uint256 public ticketPrice;
-    uint256 public totalAmount;
-    uint256 public startAt;
-    uint256 public endAt;
-    uint256 public timeRange;
-    string public message = "Buy your first Event ticket";
+    uint256 numberOfTicket;
+    uint256 ticketPrice;
+    uint256 totalAmount;
+    uint256 startAt;
+    uint256 endAt;
+    uint256 timeRange;
+    string message = "Buy your first Event ticket";
 
     constructor(uint256 _ticketPrice){
         ticketPrice = _ticketPrice;
@@ -22,6 +22,9 @@ contract EventTicket{
         numberOfTicket++;
         totalAmount+=_value;
         ticketId = numberOfTicket;
+    }
 
+    function etAmount() public view returns(uint256){
+        return totalAmount;
     }
 }
