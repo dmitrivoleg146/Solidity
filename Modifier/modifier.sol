@@ -38,7 +38,7 @@ contract Modifier{
         x-=1;
         if( i>1){
             decrement(
-                i-1;
+                i-1
             );
         }
     }
